@@ -37,6 +37,11 @@ jobs:
           init-shell: bash
           cache-environment: true
           cache-downloads: true
+          
+      - name: Activate environment
+        shell: bash
+        run: |
+          mamba activate teachopencadd
 
       - name: Additional info about the build
         shell: bash
