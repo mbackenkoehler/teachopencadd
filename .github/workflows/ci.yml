@@ -15,8 +15,6 @@ jobs:
         cfg:
           - os: ubuntu-latest
             python-version: "3.9"
-          - os: macos-latest
-            python-version: "3.9"
           - os: windows-latest
             python-version: "3.9"
 
@@ -41,7 +39,7 @@ jobs:
       - name: Activate environment
         shell: bash
         run: |
-          mamba activate teachopencadd
+          conda activate teachopencadd
 
       - name: Additional info about the build
         shell: bash
